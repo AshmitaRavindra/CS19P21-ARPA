@@ -1,0 +1,40 @@
+EXP - 14
+
+Windows Power Shell open and run these commands
+using power shell we can create instances directly in azure without moving to browser
+
+$PSVersionTable
+New-Item -Path . -Name "ABC.txt" -ItemType "file" - creates a empty file
+type ABC.txt
+New-Item -Path . -Name "XYZ.txt" -ItemType "file" -value "REC-CSE Welcomes You....!" - creates a file with value
+cls - clear screen 
+dir - directory files selection
+New-Item -Path . -Name "RPA" -ItemType "directory" - to  create a directory
+
+all these commands in UiPath 
+
+file explorer and type powershell in search bar and it opens windowspowershell 
+dir
+create a notepad file with two commands
+then read text file 
+invoke power shell -> put the output variable of read text file -> in properties enable IsScript and in type argument select System.FileInfo
+it will be created but to show the end user delete the two files
+UiPath.UiAutomaion.Activities download 
+use start process each for REC and RIT and include delay 00:00:05
+and then include kill process in the processName -> "Notepad"
+it will create notepad files 
+
+IN POWERSHELL
+New-Item -Path . -Name "Colleges" -ItemType "directory"
+Move-Item -Path "REC.txt" -Destination "Colleges"
+Move-Item -Path "RIT.txt" -Destination "Colleges"
+
+in UiPath -> file second 
+read text file and create a file a.txt with New-Item -Path . -Name "Colleges" -ItemType "directory" and then in invoke power shell same all but have System.IO.DirectoryInfo
+
+create another sequence move
+create b.txt with these two commands 
+Move-Item -Path "REC.txt" -Destination "Colleges"
+Move-Item -Path "RIT.txt" -Destination "Colleges"
+and same process here invoke process la FileInfo use 
+now when we run two file REC and RIT inside Colleges 

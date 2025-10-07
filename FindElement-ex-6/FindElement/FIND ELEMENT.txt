@@ -1,0 +1,11 @@
+FIND ELEMENT 
+https://acme-test.uipath.com/
+use application browser
+find element inside do section and indicate the elememt the username set variable in output as feUname-> as Uielement
+get attribute under find element 
+	feUname -> input field 
+        use inner html ->attribute name , use image -> src 
+	save to : create variable strText
+message box -> strText 
+
+element xist activity will return whether true or false

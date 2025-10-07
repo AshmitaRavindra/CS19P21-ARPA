@@ -1,0 +1,12 @@
+in orchestrator itself we can modify in the url (credentials , username ,password) anything in orchestrator assest we can change
+To create a new folder -> goto tenant - folder - new folder and then give create new folder
+
+
+queue(dispatcher , performer)
+
+RE framework
+Linear -> IMDB -> only time
+
+1 -> Movie Name -> .XLSX
+->Iterative or Repetitive
+Failure 10*90 

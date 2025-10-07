@@ -1,0 +1,7 @@
+for tnea files 
+
+apply filter and store college code of rec and remove rit numbers 
+apply green colour for students of cse branch fill the colour with entire rows 
+
+
++":H" -> : will help to read till last of column H

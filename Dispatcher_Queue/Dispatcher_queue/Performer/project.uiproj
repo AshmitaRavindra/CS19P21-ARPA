@@ -1,0 +1,6 @@
+{
+  "Name": "Performer",
+  "ProjectType": "Process",
+  "Description": "Blank Process",
+  "MainFile": "Main_Performer.xaml"
+}

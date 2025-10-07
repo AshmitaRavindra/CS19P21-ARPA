@@ -1,0 +1,56 @@
+RE FRAMEWORK:-
+1) Linear Process - one time process (input->get data->play data->end)
+
+2)Iterative Process - for n times (input ->gets data ->for loop it processs data one by one in loop) if any error in the middle then the                remaining will not be read to avoid that we have transactional process
+
+3)Transactional Process - it parallelly gets and process data , if anything in the middle fails also it will continue to work crtly after that (Queue plays an important role)
+
+template -> re template
+states::-(4 states and 7 transaction)
+1)initialisation - to open and store in a data table(read data , open application browser)
+2)get transaction
+3)process transaction
+4)end
+
+transaction means that success , exception etc...,
+Dispatcher -> get and process data (excel to queue)
+Performer -> we can take all module one by one from queue and not from excel file
+
+
+In initialisation:-
+while starting for first time exception as nothing , config is nothing (config is a variable created of type dictionary , 
+in_ , out_ check inside arguments panel)
+
+==>initAllSettings:-
+in then part -> abc.xaml or xyz.xaml to include them inside use invoke initAllSettings activity -> to know about it click open workflow
+->there will be a config file inside data folder -> in real time we can alter in this 
+we will have 3 sheets (settings , constants , assests)
+initAllSettings in config file will take care of reading all keys and assigning them (opens and stores as key value pair)
+=>this in_ConfigFile will take data as Data/Config.xlsx and that read range will have an output variable
+another for each is to have the operations only for the first two columns 
+->Not String.IsNullOrWhiteSpace(row("Name").ToString.Trim) -> this means if white space leave that and read the next next key value pair
+->take all and store as key value pair
+
+
+Get Transactional Data ;-
+->Check stop signal -> we can only stop the process through orchrastrator
+->Get Transaction item-> to know what all has happened
+  
+Process Transaction data and then end process
+
+
+
+Students->Digi campus
+1. Init
+1.1Digii campus portal
+1.2 load data in datatable
+1.3Dispatch the value into queues
+
+2.Get Transactional Data
+2.1 Get data from orchestrator Queue
+
+3.Process
+3.1 Automation to add the current data to digicampus portal
+after the data is ok it gets next data 
+
+4.End process

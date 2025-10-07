@@ -1,0 +1,21 @@
+ex-10:
+problem statement
+for an excel file containing a set of student if we want to generate certificate by opening a ppt and replace the student name place and save as a separate file and save , then using smtp -> adds subject , body and share to all participants 
+to access these -> imap(2 activities) , pop (only one)
+
+all mails to classify and store -> like labels in email
+prerequisite :-
+Gmail -> @gmail.com/google workspace
+2 step vertification->enable
+app password 
+port : 993
+server name : imap.gmail.com for Gmail
+Email id congigure : 220701031@rajalakshmi.edu.in
+password : vjgo gezy laes hoxy (password created as uipath)
+
+
+version -> 1.23.11 mail activities to download 
+under read range 
+get imap mail message ->port 993 , server name and mail id give
+get password varala so we directly gave the password in imap activity
+                    

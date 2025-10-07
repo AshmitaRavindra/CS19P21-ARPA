@@ -1,0 +1,40 @@
+Debugging 
+in debug dropdown:
+Run file -> if more than one sequence then open the file we want to run and then give run file (OUTPUT IN OUTPUT PANNEL)
+Run -> it will run the file name called Main.xml file
+Debug -> step by step it will run
+ 
+to slow the debug process -> go to debug in the top bar and click slow process 
+if we want to have check marks and check each step then we can click execution tail and it will checkmark each step
+if we want to stop in the middle of the execution then -> click break and then in locals panel we can edit by clicking in the pencil icon and then click continue and run it 
+=> but not suitable to use break always -> we can use an option called (breakpoints)
+
+=>(breakpoints)-> select the activity 
+Click Type	Action				Result / Use Case
+Single		Enable/Disable breakpoint	Toggle on/off without removing it
+Double		Go to the activity		Quickly jump to where the breakpoint is set
+Triple		Remove breakpoint		Delete the breakpoint completely
+
+->> we can nest the sequence also and execute 
+
+use of step into and step out 
+Step Into: Pauses at every single activity, including inside containers.(pauses the activity)
+Step Over: Executes the entire container, pausing only after it finishes.(it pauses the container and not the activity)
+Step Out: Exits the current container and pauses at the next outer activity.
+
+
+
+conditional breakpoint :--
+breaks upon some condition
+enable breakpoint for write line by right click and it would have toggled - then click edit breakpoint settings and give currentNumber>=60
+and it will stop when the condition exceeds 
+then clear the condition and give only hit cout as 3 and see 
+then currentNumber = 33 and hitCount as 3 and see -> if an array contains more than 3 times 33 then because the hit count is 3 it will stop in the third time 33 appears
+Hit Count lets you control how many times a breakpoint must be reached before the debugger actually pauses.
+
+
+will come after adding breakpoint 
+Locals panel -> to view the execution and changes happening 
+Watch -> is like when we add the variable name it will give the type and value 
+Immediate -> we can change the value by typing intFNo=20 like that we can change the value
+
